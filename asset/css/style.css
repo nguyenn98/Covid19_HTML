@@ -1,0 +1,712 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    max-width: 100%;
+    overflow-x: hidden;
+/*     height: 900px; */
+
+}
+img{
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* HEADER */
+#top-header{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 26px;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: -13px;
+    margin-left: 17px;
+}
+#end-top-header{
+    display:flex;
+    align-items: center;
+    margin-right: 22px;
+    position: relative;
+}
+#day-header{
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(105, 102, 97);
+    margin-left: 125px;
+    letter-spacing: 0.2px;
+}
+/* transition cho ti-search */
+.ti-search{
+    font-size: 23px;
+    margin-right: 16px;
+    margin-left: 340px;
+    color: rgb(143, 142, 142);
+    cursor: pointer;
+}
+#set-icon{
+    border-radius: 6px;
+    background-color: rgba(r, g, b, 0);
+    position: absolute;
+    right: 245px;
+    transition: 0.8s ease;
+    width: 0px;
+    transform: scale(0);
+    transition-delay: 0.5s;
+}
+.ti-search:hover #set-icon{
+    width: 300px;
+    height: 20px;
+    box-shadow: 0.2px 1px grey;
+    background-color: #f0eded;
+    border-color: #f0eded;
+    position: absolute;
+    top: 20px;
+    transform: scale(1,1);
+
+}
+#hotline{
+    background-color: rgb(235, 5, 5);
+    color:white;
+    font-size: 13.8px;
+    font-weight: 780;
+    border-radius: 10.5px;
+    padding: 6px 14px 7px;
+    letter-spacing: -0.4px;
+    font-family:Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+#background-header{
+    width: 100%;
+    height: 148px;
+    background: #2e3192;
+    position: relative;
+}
+#title-header{
+    color: white;
+    font-size: 21.3px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 615;
+    letter-spacing: -0.7px;
+    padding: 66px;
+    margin-left: 210px;
+}
+#sticky-header{
+    background-color: #2e3192;
+    height: 44px;
+    width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 101;
+}
+#menu-header{
+    display: flex;
+    list-style: none;
+    font-size: 16px;
+    letter-spacing: -0.8px;
+    font-weight: 500;
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    margin-top: -27px;
+    margin-left: 95px; 
+}
+.ti-home{
+    text-decoration: #2e3192;
+    margin-right: 10px;
+    box-shadow: 0 3px white;
+    padding: 4px 6.5px;
+    height: 25.5px;
+    margin-top: 7.5px;
+    font-size: 16px;
+}
+#minisiry-of-health{
+    position: absolute;
+    top: 8px;
+    left: 135px;
+    cursor: pointer;
+}
+#Corona-Virus{
+    position: absolute;
+    top: 36px;
+    right: 180px;
+}
+/* hide title */
+.element-header{
+    padding-right: 11px;
+    margin-top: 10px;
+}
+.sub-title{
+    display: none;
+    color:rgb(63, 62, 62);
+    background-color: rgb(254, 255, 246);
+    border: 0.5px solid rgb(44, 44, 44);
+    width: 100%;
+    margin-right:-17px;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 200;
+    text-align: center;
+}
+.element-header:hover .sub-title{
+    display: block;
+    color:rgb(110, 112, 112);
+    background-color: rgb(254, 255, 245);
+} 
+
+/* MAIN */
+#main{
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+#country{ 
+    margin-top: -8px;
+}
+.Viet-Nam{
+    font-size: 23px;
+    color: #333380;
+    font-weight: 700;
+    font-family: sans-serif;
+    padding-left: 5px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+.The-Gioi{
+    font-size: 20px;
+    color: rgba(46, 49, 146, 0.6);
+    font-weight: 700;
+    font-family: system-ui;
+    letter-spacing: -1px;
+    cursor: pointer;
+}
+/* Thống kê số ca nhiễm */
+#Parameter{
+    display: flex;
+    justify-content: space-around;
+    font-size: 12.5px;
+    font-weight: 650;
+    font-family: system-ui;
+    margin-left: -8px;
+    margin-top: 9px;
+}
+.background-Parameter{
+    text-align: center;
+    width: 340px;
+    height: 80px;
+    margin-right: 5px;
+    padding-top: 2px;
+    line-height: 2.5px;
+}
+
+/* slide-1 */
+#slide-1{
+    margin-top: 24px;
+    display: flex;
+    border-bottom: 1px solid #e8e8e8;
+}
+#doctor{
+    width: 645px;
+}
+#title-sl1{
+    font-size: 24.5px;
+    line-height: 130%;
+    letter-spacing: .02em;
+    color: #333;
+    margin-bottom: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    margin-top: 5px;
+}
+#textleft-sl1{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 130%;
+    color: #414040;
+}
+#right-sl1{
+    margin-left: 10px;
+}
+#scroll-sl1{
+    background: #f0f8ff;
+    border-left: 1px solid rgba(0,0,0,.1);
+    width: 400px;
+    height: 485px;
+    overflow-y: scroll; /* Add the ability to scroll */
+    margin-top: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#scroll-sl1::-webkit-scrollbar{
+    width: 5px;
+}
+#scroll-sl1::-webkit-scrollbar-thumb{
+    background-color: rgb(174, 9, 9);
+    border-radius: 10px;
+}
+
+#dots{
+    background-color: #2e3192;
+    border-radius: 50%;
+    color: #2e3192;
+    font-size: 9px;
+} 
+#date-sl1{
+    font-family: 'Merriweather';
+    font-weight: 550;
+    font-size: 15.5px;
+    color: #bb1119;
+}
+.news{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.news h4{
+    font-size: 17px;
+    font-weight: 550;
+    color: #2e2e2e;
+}
+.news p{
+    font-weight: 400;
+    color: #2b2a2a;
+    letter-spacing: -0.5px;
+    font-size: 15.2px;
+    line-height: 25px;
+    text-align: justify;
+}
+#see-more{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight:550;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: -0.2px;
+    color: #31347c;
+    cursor: pointer;
+}
+
+/* slide-2 */
+#slide-2{
+    display: flex;
+    margin-top: 20px;
+}
+/* left slide-2 */
+#boder-table{
+    border:  1px solid #EAEAF4;
+    border-radius: 5px;
+    width: 515px;
+    height: 445px;
+}
+
+#table{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#tbody{
+    width: 480px;
+    height: 370px;
+    overflow-y: scroll; /* Add the ability to scroll */
+    margin-top: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#tbody::-webkit-scrollbar{
+    width: 5px;
+}
+#tbody::-webkit-scrollbar-thumb{
+    background-color: #F0EFF4;;
+    border-radius: 10px;
+}
+#thead{
+    display: flex;
+    width: 470px;
+    height: 65px;
+    color: #302f2f;
+    font-size: 16.2px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:550;
+    letter-spacing: -0.5px;
+    margin-bottom: -5px;
+    margin-top: -15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.row{
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    margin-top: -3px;
+    height: 45px;
+    font-size: 15.7px;
+    color: #302f2f;
+}
+.city{
+    width: 180px;
+    margin-left: 10px;
+}
+.total{
+    width: 110px;
+    text-align: right;
+}
+.time{
+    width: 70px;
+    text-align: right;
+    padding-right: 15px;
+    color: #DA2E59;
+}
+.die{
+    width: 70px;
+    margin-right: 5px;
+    text-align: right;
+}
+
+/* right slide-2 */
+#right-sl2{
+    width: 515px;
+    height: 445px;
+    border:  1px solid #EAEAF4;
+    border-radius: 3px;
+    margin-left: 40px;
+    margin-top: 28px;
+    position: relative;
+}
+#title-sl2{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-top: 18px;
+}
+#title-sl2 span{
+    background-color: #2e3192;
+    color: #fff;
+    padding: 9px 7px;
+    font-size: 13px;
+    border-radius: 3px;
+    font-family: Arial;
+}
+/* step-1 Tạo thang đo */
+#chart{
+    margin-left: 10px;
+    margin-top: -12px;
+    font-size: 12px;
+}
+.chart-row{
+    display: flex;
+    padding: 10px;
+}
+.chart-row span{
+    color:#EAEAF4;
+    margin-top: 4px;
+    margin-left: 15px;
+}
+.chart-row p{
+    width: 20px;
+    text-align: right;
+    letter-spacing: 1px;
+}
+/* step-2 Tạo các cột*/
+#column{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 30px;
+    margin-right: 15px;
+}
+.col{
+    background-color: gray;
+    width: 30px;
+    position: relative;
+}
+.col-hidden{
+    visibility: hidden;
+    width: 180px;
+    height:70px;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    border:1px solid #747272;
+    box-shadow: 1px 1px 5px #aaaaaa;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    text-align: left;
+    position: absolute;
+    z-index: 1;
+}
+.col-hidden p{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 3px 5px
+}
+.col:hover .col-hidden{
+    visibility: visible;
+}
+/* step-3 Tạo đường ngang đỏ*/
+#point-line{
+    margin-left: 70px;
+    margin-top: -238px;
+    position: absolute;
+}
+#point-lst{
+    display: flex;  
+    justify-content: space-evenly;
+    margin-bottom: -19px;
+}
+.point{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: red;
+    margin-right: 54px;
+}
+#red-line{
+    background-color: red;
+    width: 375px;
+    font-size: 2px;
+    margin-left: 5px;
+}
+/* step-4 Tạo phụ đề note */
+#note-sl2{
+    display: flex;
+    justify-content: center;
+    margin-left: -60px;
+}
+#note-1{
+    display: flex;
+    padding-right: 30px;
+}
+#note-2{
+    display: flex;
+}
+#note-gray{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-right: 10px;
+}
+#note-red{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: red;
+    margin-top: 14px;
+}
+#line-red{
+    width: 15px;
+    height: 0px;
+    border: 1px solid red;
+    margin-top: 17px;
+    margin-left: -12.6px;
+}
+
+/* slide-3 */
+#slide-3{
+    border-top: 1px solid #2e3192;
+    border-bottom: 1px solid #2e3192;
+    margin-top: 30px;
+    height:575px;
+    display: flex;
+    padding-bottom: 25px;
+}
+#left-sl3{
+    width: 535px;
+    margin-top: 20px;
+}
+.contain-sl3{
+    display: flex;
+    padding: 20px 0px;
+    border-bottom: 1px solid #EAEAF4;
+    margin-top: -20px;
+    margin-right: 9px;
+}
+.contain-sl3 img{
+    margin-right: 15px;
+    padding-top: 10px;
+    width: 225px;
+    height: 144px;
+}
+.contain-sl3 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 550;
+    letter-spacing: .02em;
+    color:#3b3b3b;
+    cursor: pointer;
+}
+.contain-sl3 p{
+    font-family: Arial;
+    font-style: normal;
+    font-size: 14px;
+    color: #444;
+    line-height: 19px;
+}
+#right-sl3{
+    width: 520px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+/* slide-4 */
+#slide-4{
+    height:525px;
+    padding-top: 20px;
+    display: flex;
+    border-bottom: 1px solid #2e3192;
+}
+#left-sl4{
+    width: 535px;
+}
+.contain-sl4 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    font-weight: 600;
+    color:#272727;
+    cursor: pointer;
+}
+.contain-sl4 p{
+    color: #444; 
+    font-style: normal;
+    letter-spacing: -0.5px;
+    font-family: Arial;
+    line-height: 19px; 
+    font-size: 15px;
+}
+#right-sl4{
+    padding-left: 35px;
+    margin-top: 27px;
+}
+.contain-sl3 h4{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    letter-spacing: -0.5px;
+    color:rgb(61, 60, 60);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* slide-5 */
+#slide-5{
+    height:535px;
+    padding-top: 20px;
+    display: flex;
+    border-bottom: 1px solid #2e3192;
+}
+/* slide-6 */
+#slide-6{
+    height: 635px;
+    padding-top: 20px;
+    display: flex;
+}
+#right-sl6{
+    padding-left: 30px;
+    margin-top: 37px;
+}
+#right-sl6 p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0px;
+    width: 240px;
+    line-height: 25px;
+    color: #333;
+}
+/* slide-7 copy slide 2 */
+#slide-7{
+    border-top: 1px solid #2e3192;
+    margin-top: -40px;
+    height:580px;
+    display: flex;
+    padding-bottom: 25px;
+}
+/* slide 8 copy slide 5 */
+#slide-8{
+    border-top: 1px solid #2e3192;
+    height:520px;
+    display: flex;
+    padding-top: 20px;
+}
+/* slide 9 */
+#slide-9{
+    border-top: 1px solid #2e3192;
+    height:650px;
+    display: flex;
+    padding-top: 20px;
+    margin-right: 30px;
+}
+#left-sl9{
+    width: 535px;
+}
+#slide-9 p{
+    margin-top: 5px;
+    font-size: 16.5px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    width: 254px;
+    line-height: 25px;
+    color: #383838;
+}
+
+/* slide 10 */
+#slide-10{
+    padding-top: 20px;
+}
+#contain-sl10{
+    margin-top: 10px;
+    display: flex;
+}
+#contain-sl10 img{
+    width: 200px;
+    padding-right: 5px;
+    border-radius: 0px;
+}
+.title-footer{
+    border: 1px solid black;
+    color: #585858;
+    background-color: rgb(252, 250, 250);
+    padding: 5px;
+    font-size: 14px;
+    visibility: hidden;
+}
+
+/* THE END */
+#footer{
+    margin-top: 85px;
+    width: 100%;
+    height: 143px;
+    background: #2e3192;
+    position: relative;
+}
+#text-footer{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13.5px;
+    font-weight: 500;
+    line-height: 4.5px;
+    letter-spacing: 0.25px;
+    width: 60%;
+    height: 50%;
+    margin-left: 270px;
+    padding-top: 0.5px;
+}
+#text-footer h4{
+    font-size: 13.5px;
+    margin-bottom: 0px;
+}
+#footer #minisiry-of-health{
+    position: absolute;
+    top: -38px;
+}
+#footer #VCcorp{
+    position: absolute;
+    right: 135px;
+    top: 18px;
+}
+
